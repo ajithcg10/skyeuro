@@ -4614,6 +4614,9 @@ Section Title
 .country-block .image-box {
   position: relative;
 }
+.content-box.box{
+  height: 150px;
+}
 .country-block .image {
   position: relative;
   overflow: hidden;
