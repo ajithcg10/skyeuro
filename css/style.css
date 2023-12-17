@@ -4628,6 +4628,8 @@ Section Title
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
 }
+
+
 .country-block .image::before {
   position: absolute;
   left: 0;
@@ -4639,6 +4641,22 @@ Section Title
   background-image: url(../images/image/curve-dark.png);
   content: "";
   z-index: 2;
+}
+.country-block .inner-box:hover .image-white  img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+ 
+}
+.country-block .image-white {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0px;
+}
+.country-block .image-white img {
+  width: 100%;
+  height: 260px;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 .country-block .image-white::before {
   position: absolute;
