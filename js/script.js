@@ -137,7 +137,7 @@ var THEMEMASCOT = {};
 			smartSpeed: 500,
 			autoHeight: true,
 			autoplay: true,
-			autoplayTimeout: 10000,
+			autoplayTimeout: 3000,
 			navText: ['<span class="fa fa-long-arrow-alt-left"></span>', '<span class="fa fa-long-arrow-alt-right"></span>'],
 			responsive: {
 				0: {
@@ -163,7 +163,7 @@ var THEMEMASCOT = {};
 			smartSpeed: 500,
 			autoHeight: true,
 			autoplay: true,
-			autoplayTimeout: 10000,
+			autoplayTimeout: 3000,
 			navText: ['<span class="fa fa-long-arrow-alt-left"></span>', '<span class="fa fa-long-arrow-alt-right"></span>'],
 			responsive: {
 				0: {

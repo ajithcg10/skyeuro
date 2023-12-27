@@ -1927,7 +1927,7 @@ Main Header
   padding-right: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: none;
 }
 .header-top .inner-container {
   position: relative;
@@ -2034,7 +2034,7 @@ Main Header
   display: block;
 }
 .main-header .logo.abouts {
-filter: invert(1);
+/* filter: invert(1); */
 }
 .logo{
   width: 100px;
@@ -2044,7 +2044,7 @@ filter: invert(1);
 .main-header .logo img {
   max-width: 100%;
   height: auto; 
-
+/* filter: invert(1); */
 }
 .main-header .main-box {
   position: relative;
@@ -2069,7 +2069,7 @@ filter: invert(1);
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-around;
+          justify-content: end;
   width: 100%;
 }
 
@@ -2139,10 +2139,10 @@ filter: invert(1);
   margin-left: 10px;
 }
 .main-menu .navigation > li > a:hover {
-  color: #ffffff;
+  color:var(--theme-color2);
 }
 .main-menu .navigation > li.current > a {
-  color: #ffffff;
+  color:var(--theme-color2);
   font-weight: 700;
 }
 .main-menu .navigation > li.dropdown > a {
@@ -2356,7 +2356,7 @@ filter: invert(1);
   font-size: 14px;
   padding: 8px 0;
   padding-left: 55px;
-  color: #ffffff;
+  color: #aab3bb;
   text-align: left;
   font-weight: 600;
   white-space: nowrap;
@@ -2393,7 +2393,7 @@ Header Style One
 
 ***/
 .header-style-one .header-lower {
-  background-color: var(--bg-theme-color1);
+  background-color: var(--text-color-bg-theme-color2);
 }
 .header-style-one .header-lower .logo-box {
   position: relative;
@@ -2411,7 +2411,7 @@ Header Style One
           justify-content: center;
   margin-top: -40px;
   padding: 20px 20px;
-  background-color: #ffffff;
+
 }
 .header-style-one .header-lower .main-box {
   -webkit-box-align: end;
@@ -2452,12 +2452,14 @@ Header Style One
 .header-style-two .header-top {
   position: relative;
   margin: 0;
+
   padding: 0;
   background-color: var(--bg-theme-color1);
   border-top: 3px solid var(--border-theme-color2);
 }
 .header-style-two .header-top .inner-container {
   padding: 0;
+
 }
 .header-style-two .header-top .list-style-one li {
   font-size: 13px;
@@ -2465,7 +2467,7 @@ Header Style One
   color: #aab3bb;
 }
 .header-style-two .header-top .list-style-one li a {
-  color: #aab3bb;
+  color:  #707070;;
 }
 .header-style-two .header-top .list-style-one li:hover a {
   color: #fff;
@@ -2500,7 +2502,7 @@ Header Style One
   bottom: 40px;
 }
 .header-style-two .header-lower .main-menu .navigation > li > a {
-  color: #fff;
+  color: #707070;
 }
 
 /*** 
@@ -2512,7 +2514,7 @@ Header Style One
 ***/
 .header-style-three {
   position: relative;
-  background-color: var(--bg-theme-color1);
+  background-color: var(--text-color-bg-theme-color1);
 }
 .header-style-three .main-box {
   padding: 0 80px;
@@ -2535,7 +2537,13 @@ Header Style One
   bottom: 40px;
 }
 .header-style-three .main-box .main-menu .navigation > li > a {
-  color: #fff;
+  color: #aab3bb;
+}
+.header-style-three .main-box .main-menu .navigation > li > a:hover {
+  color: var(--theme-color2);
+}
+.header-style-three .main-box .main-menu .navigation > li.current > a  {
+  color: var(--theme-color2);
 }
 
 /*** 
@@ -2562,6 +2570,7 @@ Sticky Header
 .sticky-header.fixed-header {
   opacity: 1;
   z-index: 9999;
+  background-color: #ffffff !important;
   visibility: visible;
 }
 
@@ -2570,7 +2579,7 @@ Sticky Header
 }
 .sticky-header .logo img {
   max-height: 100px;
-  filter: invert(1);
+  /* filter: invert(1); */
 }
 .sticky-header .logo.about img{
   filter: none;
@@ -2617,7 +2626,7 @@ Sticky Header
 }
 
 .sticky-header .mobile-nav-toggler {
-  color: var(--theme-color1);
+  color:#221f1f;
 }
 
 /*** 
@@ -2785,6 +2794,7 @@ Sticky Header
   padding: 10px 20px;
   font-size: 16px;
   color: #ffffff;
+  text-align: left !important;
   font-weight: 400;
   text-transform: capitalize;
 }
@@ -2989,7 +2999,7 @@ Section Title
 .main-slider h1 {
   position: relative;
   display: block;
-  font-size: 90px;
+  font-size: 50px;
   line-height: 1em;
   color: #ffffff;
   font-weight: 500;
@@ -8358,8 +8368,9 @@ image-white
   position: relative;
   display: -webkit-box;
   filter: invert(1);
+  
   display: -ms-flexbox;
-  display: flex;
+  display:none !important;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
