@@ -3434,8 +3434,8 @@ Section Title
 }
 .features-section-two .icon-plane {
   position: absolute;
-  top: -195px;
-  left: 384px;
+  top: -225px;
+  left: 420px;
 }
 .features-section-two .title-column .inner-column {
   padding: 74px 60px 30px 80px;
@@ -3456,6 +3456,7 @@ Section Title
   position: absolute;
   right: 25px;
   bottom: 0;
+  left: 78px;
   margin-bottom: 0;
 }
 
@@ -4625,7 +4626,10 @@ Section Title
   position: relative;
 }
 .content-box.box{
-  height: 180px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .country-block .image {
   position: relative;
